@@ -76,8 +76,8 @@ terminal (needs `docker build -t openmuse-computer:local apps/computer`).
 ## Notes
 
 - Built against upstream commit `205cc38`. The Expo web export was
-  compile-tested on the pinned commit before this bundle shipped
-  (pending final verification run — see status).
+  compile-tested against the pinned commit (exit 0, `dist/web` produced
+  with `index.html` + JS bundle) before this bundle shipped.
 - `tailscale serve` provisions a real TLS cert for the tailnet hostname, so
   Safari on the iPhone trusts it with no warnings (Tailscale app must be
   active on the phone).
